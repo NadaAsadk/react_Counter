@@ -4,9 +4,13 @@ import viteLogo from '/vite.svg';
 import './App.css';
 
 function App() {
-  <>
-  <Counter/>
-  </>
+  let[count,setCount]=useState(0);
+    const changeCounter=()=>{
+        setCount(count+1);
+    }
+    return(
+        <button onClick={changeCounter}>nada asad {count}</button>
+    );
 }
 
 export default App
